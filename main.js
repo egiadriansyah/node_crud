@@ -30,6 +30,8 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use('/uploads', express.static('uploads'));
+
 // set template engine
 app.set('view engine', 'ejs');
 
